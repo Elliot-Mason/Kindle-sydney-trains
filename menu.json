@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "name": "Sydney Trains Indicator",
+      "priority": 1,
+      "items": [
+        {
+          "name": "Start (Standalone On-Device)",
+          "priority": 1,
+          "action": "./bin/launcher.sh",
+          "params": "start"
+        },
+        {
+          "name": "Stop App & Re-enable Sleep",
+          "priority": 2,
+          "action": "./bin/launcher.sh",
+          "params": "stop"
+        }
+      ]
+    }
+  ]
+}

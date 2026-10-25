@@ -87,10 +87,55 @@ The simulator will automatically discover it, register the backend routes, and m
 
 ---
 
+## Running Natively on a Jailbroken Kindle (No PC Needed)
+
+You can run this departure board directly on your Kindle with **zero external PC or server running**. The Kindle will connect to Wi-Fi, fetch train departures from Transport for NSW, and render them on-device.
+
+### Prerequisites
+1. **Jailbroken Kindle Paperwhite 1** (FW 5.6.1.1 or similar).
+2. **KUAL** (Kindle Unified Application Launcher) installed.
+3. **Python 3** installed on Kindle (install NiLuJe's `python3` package via MRPI or KUAL from the MobileRead forum).
+
+### Installation Steps
+1. Connect your Kindle to your computer via USB.
+2. Copy this entire folder into the Kindle's `extensions` directory:
+   ```
+   [Kindle USB Root]
+     └── extensions/
+         └── sydney-trains/        <-- Copy this repo here
+             ├── config.xml
+             ├── menu.json
+             ├── bin/launcher.sh
+             ├── server.py
+             ├── kindle.html
+             ├── stations.json
+             └── config.json       (copy from config.example.json)
+   ```
+3. Copy `config.example.json` to `config.json` inside that folder and set your origin/destination station codes.
+4. Safely eject and unplug the USB cable.
+
+### Launching on the Kindle
+1. On your Kindle home screen, tap **KUAL**.
+2. Select **Sydney Trains Indicator** &rarr; tap **Start (Standalone On-Device)**.
+3. The launcher will automatically:
+   - Prevent screensaver/sleep timeout (`preventScreenSaver = 1`).
+   - Launch `python3 server.py` in the background on `127.0.0.1:5052`.
+   - Open the Kindle Experimental Browser directly to `http://127.0.0.1:5052/kindle`.
+4. Your departure board will now update live every 30 seconds completely standalone!
+
+### Stopping the App
+Open **KUAL** &rarr; **Sydney Trains Indicator** &rarr; **Stop App & Re-enable Sleep**.
+
+---
+
 ## Architecture
 
 ```
 Kindle-sydney-trains/
+├── config.xml              # KUAL extension manifest for jailbroken Kindle
+├── menu.json               # KUAL on-device menu definition
+├── bin/
+│   └── launcher.sh         # On-device background daemon & browser launcher
 ├── kindle-app.json         # Plugin manifest for Kindle-simulator
 ├── kindle.html             # High-contrast ES5 Sydney Trains indicator board
 ├── server.py               # Transport for NSW departure parser & pure Python DST engine
