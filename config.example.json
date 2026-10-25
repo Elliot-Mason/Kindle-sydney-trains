@@ -1,0 +1,10 @@
+{
+  "origin_code": "10101252",
+  "origin_name": "Penrith",
+  "destination_code": "10101100",
+  "destination_name": "Central",
+  "api_url_base": "https://transport-tracker-server.vercel.app/api/trains?name_origin=",
+  "poll_interval_ms": 30000,
+  "full_refresh_interval_ms": 600000,
+  "port": 5052
+}

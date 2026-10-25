@@ -1,0 +1,1406 @@
+[
+  {
+    "name": "Aberdeen",
+    "code": "10101192"
+  },
+  {
+    "name": "Adamstown",
+    "code": "10101159"
+  },
+  {
+    "name": "Albion Park",
+    "code": "10101381"
+  },
+  {
+    "name": "Allawah",
+    "code": "10101338"
+  },
+  {
+    "name": "Arlington Light Rail",
+    "code": "10101460"
+  },
+  {
+    "name": "Arncliffe",
+    "code": "10101333"
+  },
+  {
+    "name": "Artarmon",
+    "code": "10101116"
+  },
+  {
+    "name": "Ashfield",
+    "code": "10101209"
+  },
+  {
+    "name": "Asquith",
+    "code": "10101128"
+  },
+  {
+    "name": "Auburn",
+    "code": "10101219"
+  },
+  {
+    "name": "Austinmer",
+    "code": "10101363"
+  },
+  {
+    "name": "Awaba",
+    "code": "10101150"
+  },
+  {
+    "name": "Banksia",
+    "code": "10101334"
+  },
+  {
+    "name": "Bankstown",
+    "code": "10101401"
+  },
+  {
+    "name": "Bardwell Park",
+    "code": "10101410"
+  },
+  {
+    "name": "Bargo",
+    "code": "10101303"
+  },
+  {
+    "name": "Bathurst",
+    "code": "10101281"
+  },
+  {
+    "name": "Beecroft",
+    "code": "10101197"
+  },
+  {
+    "name": "Bell",
+    "code": "10101272"
+  },
+  {
+    "name": "Bellambi",
+    "code": "10101367"
+  },
+  {
+    "name": "Belmore",
+    "code": "10101397"
+  },
+  {
+    "name": "Berala",
+    "code": "10101390"
+  },
+  {
+    "name": "Beresfield",
+    "code": "10101172"
+  },
+  {
+    "name": "Berowra",
+    "code": "10101131"
+  },
+  {
+    "name": "Berry",
+    "code": "10101388"
+  },
+  {
+    "name": "Beverly Hills",
+    "code": "10101413"
+  },
+  {
+    "name": "Bexley North",
+    "code": "10101411"
+  },
+  {
+    "name": "Birrong",
+    "code": "10101403"
+  },
+  {
+    "name": "Blackheath",
+    "code": "10101270"
+  },
+  {
+    "name": "Blacktown",
+    "code": "10101235"
+  },
+  {
+    "name": "Blaxland",
+    "code": "10101256"
+  },
+  {
+    "name": "Bomaderry",
+    "code": "10101389"
+  },
+  {
+    "name": "Bombo",
+    "code": "10101385"
+  },
+  {
+    "name": "Bondi Junction",
+    "code": "10101109"
+  },
+  {
+    "name": "Booragul",
+    "code": "10101152"
+  },
+  {
+    "name": "Bowral",
+    "code": "10101306"
+  },
+  {
+    "name": "Branxton",
+    "code": "10101189"
+  },
+  {
+    "name": "Bridge Street Light Rail",
+    "code": "10101601"
+  },
+  {
+    "name": "Broadmeadow",
+    "code": "10101160"
+  },
+  {
+    "name": "Bullaburra",
+    "code": "10101265"
+  },
+  {
+    "name": "Bulli",
+    "code": "10101365"
+  },
+  {
+    "name": "Bundanoon",
+    "code": "10101310"
+  },
+  {
+    "name": "Burradoo",
+    "code": "10101307"
+  },
+  {
+    "name": "Burwood",
+    "code": "10101207"
+  },
+  {
+    "name": "Cabramatta",
+    "code": "10101287"
+  },
+  {
+    "name": "Camellia",
+    "code": "10101222"
+  },
+  {
+    "name": "Campbelltown",
+    "code": "10101296"
+  },
+  {
+    "name": "Campsie",
+    "code": "10101396"
+  },
+  {
+    "name": "Canley Vale",
+    "code": "10101286"
+  },
+  {
+    "name": "Canterbury",
+    "code": "10101395"
+  },
+  {
+    "name": "Capitol Square Light Rail",
+    "code": "10101442"
+  },
+  {
+    "name": "Cardiff",
+    "code": "10101157"
+  },
+  {
+    "name": "Caringbah",
+    "code": "10101349"
+  },
+  {
+    "name": "Carlingford",
+    "code": "10101226"
+  },
+  {
+    "name": "Carlton",
+    "code": "10101337"
+  },
+  {
+    "name": "Carramar",
+    "code": "10101408"
+  },
+  {
+    "name": "Casula",
+    "code": "10101290"
+  },
+  {
+    "name": "Central",
+    "code": "10101100"
+  },
+  {
+    "name": "Chatswood",
+    "code": "10101117"
+  },
+  {
+    "name": "Cheltenham",
+    "code": "10101198"
+  },
+  {
+    "name": "Chester Hill",
+    "code": "10101405"
+  },
+  {
+    "name": "Chinatown Light Rail",
+    "code": "10101605"
+  },
+  {
+    "name": "Circular Quay",
+    "code": "10101103"
+  },
+  {
+    "name": "Civic Light Rail",
+    "code": "10101502"
+  },
+  {
+    "name": "Clarendon",
+    "code": "10101243"
+  },
+  {
+    "name": "Clyde",
+    "code": "10101220"
+  },
+  {
+    "name": "Coalcliff",
+    "code": "10101359"
+  },
+  {
+    "name": "Cockle Creek",
+    "code": "10101155"
+  },
+  {
+    "name": "Coledale",
+    "code": "10101423"
+  },
+  {
+    "name": "Como",
+    "code": "10101343"
+  },
+  {
+    "name": "Concord West",
+    "code": "10101204"
+  },
+  {
+    "name": "Coniston",
+    "code": "10101373"
+  },
+  {
+    "name": "Convention Light Rail",
+    "code": "10101439"
+  },
+  {
+    "name": "Corrimal",
+    "code": "10101368"
+  },
+  {
+    "name": "Cowan",
+    "code": "10101132"
+  },
+  {
+    "name": "Cringila",
+    "code": "10101375"
+  },
+  {
+    "name": "Cronulla",
+    "code": "10101351"
+  },
+  {
+    "name": "Crown Street Light Rail",
+    "code": "10101503"
+  },
+  {
+    "name": "Croydon",
+    "code": "10101208"
+  },
+  {
+    "name": "Dapto",
+    "code": "10101425"
+  },
+  {
+    "name": "Denistone",
+    "code": "10101200"
+  },
+  {
+    "name": "Domestic Airport",
+    "code": "10101331"
+  },
+  {
+    "name": "Doonside",
+    "code": "10101246"
+  },
+  {
+    "name": "Dora Creek",
+    "code": "10101149"
+  },
+  {
+    "name": "Douglas Park",
+    "code": "10101300"
+  },
+  {
+    "name": "Dulwich Grove Light Rail",
+    "code": "10101461"
+  },
+  {
+    "name": "Dulwich Hill",
+    "code": "10101393"
+  },
+  {
+    "name": "Dulwich Hill Light Rail",
+    "code": "10101462"
+  },
+  {
+    "name": "Dundas",
+    "code": "10101224"
+  },
+  {
+    "name": "Dungog",
+    "code": "10101186"
+  },
+  {
+    "name": "ES Marks Light Rail",
+    "code": "10101613"
+  },
+  {
+    "name": "East Hills",
+    "code": "10101419"
+  },
+  {
+    "name": "East Maitland",
+    "code": "10101176"
+  },
+  {
+    "name": "East Richmond",
+    "code": "10101244"
+  },
+  {
+    "name": "Eastwood",
+    "code": "10101199"
+  },
+  {
+    "name": "Edgecliff",
+    "code": "10101108"
+  },
+  {
+    "name": "Edmondson Park",
+    "code": "10101447"
+  },
+  {
+    "name": "Emu Plains",
+    "code": "10101253"
+  },
+  {
+    "name": "Engadine",
+    "code": "10101353"
+  },
+  {
+    "name": "Epping",
+    "code": "10101429"
+  },
+  {
+    "name": "Erskineville",
+    "code": "10101324"
+  },
+  {
+    "name": "Exeter",
+    "code": "10101309"
+  },
+  {
+    "name": "Exhibition Centre Light Rail",
+    "code": "10101440"
+  },
+  {
+    "name": "Fairfield",
+    "code": "10101285"
+  },
+  {
+    "name": "Fairy Meadow",
+    "code": "10101370"
+  },
+  {
+    "name": "Fassifern",
+    "code": "10101151"
+  },
+  {
+    "name": "Faulconbridge",
+    "code": "10101260"
+  },
+  {
+    "name": "Fish Market Light Rail",
+    "code": "10101435"
+  },
+  {
+    "name": "Flemington",
+    "code": "10101217"
+  },
+  {
+    "name": "Gerringong",
+    "code": "10101387"
+  },
+  {
+    "name": "Glebe Light Rail",
+    "code": "10101433"
+  },
+  {
+    "name": "Glenbrook",
+    "code": "10101255"
+  },
+  {
+    "name": "Glenfield",
+    "code": "10101291"
+  },
+  {
+    "name": "Gordon",
+    "code": "10101121"
+  },
+  {
+    "name": "Gosford",
+    "code": "10101139"
+  },
+  {
+    "name": "Goulburn",
+    "code": "10101315"
+  },
+  {
+    "name": "Granville",
+    "code": "10101227"
+  },
+  {
+    "name": "Green Square",
+    "code": "10101329"
+  },
+  {
+    "name": "Greta",
+    "code": "10101188"
+  },
+  {
+    "name": "Guildford",
+    "code": "10101283"
+  },
+  {
+    "name": "Gymea",
+    "code": "10101347"
+  },
+  {
+    "name": "Hamilton",
+    "code": "10101161"
+  },
+  {
+    "name": "Harris Park",
+    "code": "10101228"
+  },
+  {
+    "name": "Hawkesbury River",
+    "code": "10101133"
+  },
+  {
+    "name": "Hawthorne Light Rail",
+    "code": "10101455"
+  },
+  {
+    "name": "Haymarket Light Rail",
+    "code": "10101606"
+  },
+  {
+    "name": "Hazelbrook",
+    "code": "10101263"
+  },
+  {
+    "name": "Heathcote",
+    "code": "10101354"
+  },
+  {
+    "name": "Helensburgh",
+    "code": "10101356"
+  },
+  {
+    "name": "Hexham",
+    "code": "10101170"
+  },
+  {
+    "name": "High Street",
+    "code": "10101177"
+  },
+  {
+    "name": "Hilldale",
+    "code": "10101183"
+  },
+  {
+    "name": "Holsworthy",
+    "code": "10101420"
+  },
+  {
+    "name": "Homebush",
+    "code": "10101216"
+  },
+  {
+    "name": "Honeysuckle Light Rail",
+    "code": "10101501"
+  },
+  {
+    "name": "Hornsby",
+    "code": "10101127"
+  },
+  {
+    "name": "Hurlstone Park",
+    "code": "10101394"
+  },
+  {
+    "name": "Hurstville",
+    "code": "10101339"
+  },
+  {
+    "name": "Ingleburn",
+    "code": "10101293"
+  },
+  {
+    "name": "International Airport",
+    "code": "10101332"
+  },
+  {
+    "name": "Jannali",
+    "code": "10101344"
+  },
+  {
+    "name": "John Street Square Light Rail",
+    "code": "10101436"
+  },
+  {
+    "name": "Jubilee Park Light Rail",
+    "code": "10101432"
+  },
+  {
+    "name": "Juniors Kingsford Light Rail",
+    "code": "10101617"
+  },
+  {
+    "name": "Katoomba",
+    "code": "10101268"
+  },
+  {
+    "name": "Kembla Grange",
+    "code": "10101379"
+  },
+  {
+    "name": "Kensington Light Rail",
+    "code": "10101614"
+  },
+  {
+    "name": "Kiama",
+    "code": "10101386"
+  },
+  {
+    "name": "Killara",
+    "code": "10101120"
+  },
+  {
+    "name": "Kings Cross",
+    "code": "10101107"
+  },
+  {
+    "name": "Kingsford Light Rail",
+    "code": "10101616"
+  },
+  {
+    "name": "Kingsgrove",
+    "code": "10101412"
+  },
+  {
+    "name": "Kingswood",
+    "code": "10101251"
+  },
+  {
+    "name": "Kirrawee",
+    "code": "10101346"
+  },
+  {
+    "name": "Kogarah",
+    "code": "10101336"
+  },
+  {
+    "name": "Koolewong",
+    "code": "10101136"
+  },
+  {
+    "name": "Kotara",
+    "code": "10101158"
+  },
+  {
+    "name": "Lakemba",
+    "code": "10101398"
+  },
+  {
+    "name": "Lapstone",
+    "code": "10101254"
+  },
+  {
+    "name": "Lawson",
+    "code": "10101264"
+  },
+  {
+    "name": "Leichhardt North Light Rail",
+    "code": "10101454"
+  },
+  {
+    "name": "Leightonfield",
+    "code": "10101406"
+  },
+  {
+    "name": "Leppington",
+    "code": "10101448"
+  },
+  {
+    "name": "Leumeah",
+    "code": "10101295"
+  },
+  {
+    "name": "Leura",
+    "code": "10101267"
+  },
+  {
+    "name": "Lewisham",
+    "code": "10101211"
+  },
+  {
+    "name": "Lewisham West Light Rail",
+    "code": "10101458"
+  },
+  {
+    "name": "Lidcombe",
+    "code": "10101218"
+  },
+  {
+    "name": "Lilyfield Light Rail",
+    "code": "10101430"
+  },
+  {
+    "name": "Linden",
+    "code": "10101261"
+  },
+  {
+    "name": "Lindfield",
+    "code": "10101119"
+  },
+  {
+    "name": "Lisarow",
+    "code": "10101142"
+  },
+  {
+    "name": "Lithgow",
+    "code": "10101274"
+  },
+  {
+    "name": "Liverpool",
+    "code": "10101289"
+  },
+  {
+    "name": "Lochinvar",
+    "code": "10101187"
+  },
+  {
+    "name": "Loftus",
+    "code": "10101352"
+  },
+  {
+    "name": "Lysaghts",
+    "code": "10101374"
+  },
+  {
+    "name": "Macarthur",
+    "code": "10101297"
+  },
+  {
+    "name": "Macdonaldtown",
+    "code": "10101215"
+  },
+  {
+    "name": "Macquarie Fields",
+    "code": "10101292"
+  },
+  {
+    "name": "Macquarie Park",
+    "code": "10101427"
+  },
+  {
+    "name": "Macquarie University",
+    "code": "10101426"
+  },
+  {
+    "name": "Maitland",
+    "code": "10101178"
+  },
+  {
+    "name": "Marayong",
+    "code": "10101236"
+  },
+  {
+    "name": "Marion Light Rail",
+    "code": "10101456"
+  },
+  {
+    "name": "Marrickville",
+    "code": "10101392"
+  },
+  {
+    "name": "Martin Place",
+    "code": "10101106"
+  },
+  {
+    "name": "Martins Creek",
+    "code": "10101182"
+  },
+  {
+    "name": "Marulan",
+    "code": "10101314"
+  },
+  {
+    "name": "Mascot",
+    "code": "10101330"
+  },
+  {
+    "name": "Meadowbank",
+    "code": "10101202"
+  },
+  {
+    "name": "Medlow Bath",
+    "code": "10101269"
+  },
+  {
+    "name": "Menangle",
+    "code": "10101299"
+  },
+  {
+    "name": "Menangle Park",
+    "code": "10101298"
+  },
+  {
+    "name": "Merrylands",
+    "code": "10101282"
+  },
+  {
+    "name": "Metford",
+    "code": "10101174"
+  },
+  {
+    "name": "Milsons Point",
+    "code": "10101111"
+  },
+  {
+    "name": "Mindaribba",
+    "code": "10101180"
+  },
+  {
+    "name": "Minnamurra",
+    "code": "10101384"
+  },
+  {
+    "name": "Minto",
+    "code": "10101294"
+  },
+  {
+    "name": "Miranda",
+    "code": "10101348"
+  },
+  {
+    "name": "Mittagong",
+    "code": "10101305"
+  },
+  {
+    "name": "Moore Park Light Rail",
+    "code": "10101608"
+  },
+  {
+    "name": "Morisset",
+    "code": "10101148"
+  },
+  {
+    "name": "Mortdale",
+    "code": "10101341"
+  },
+  {
+    "name": "Moss Vale",
+    "code": "10101308"
+  },
+  {
+    "name": "Mount Colah",
+    "code": "10101129"
+  },
+  {
+    "name": "Mount Druitt",
+    "code": "10101248"
+  },
+  {
+    "name": "Mount Kuring-gai",
+    "code": "10101130"
+  },
+  {
+    "name": "Mount Victoria",
+    "code": "10101271"
+  },
+  {
+    "name": "Mulgrave",
+    "code": "10101241"
+  },
+  {
+    "name": "Museum",
+    "code": "10101104"
+  },
+  {
+    "name": "Muswellbrook",
+    "code": "10101191"
+  },
+  {
+    "name": "Narara",
+    "code": "10101140"
+  },
+  {
+    "name": "Narwee",
+    "code": "10101414"
+  },
+  {
+    "name": "Newcastle Beach Light Rail",
+    "code": "10101505"
+  },
+  {
+    "name": "Newcastle Interchange",
+    "code": "10101165"
+  },
+  {
+    "name": "Newtown",
+    "code": "10101214"
+  },
+  {
+    "name": "Niagara Park",
+    "code": "10101141"
+  },
+  {
+    "name": "Normanhurst",
+    "code": "10101194"
+  },
+  {
+    "name": "North Ryde",
+    "code": "10101428"
+  },
+  {
+    "name": "North Strathfield",
+    "code": "10101205"
+  },
+  {
+    "name": "North Sydney",
+    "code": "10101112"
+  },
+  {
+    "name": "North Wollongong",
+    "code": "10101371"
+  },
+  {
+    "name": "Oak Flats",
+    "code": "10101382"
+  },
+  {
+    "name": "Oatley",
+    "code": "10101342"
+  },
+  {
+    "name": "Olympic Park",
+    "code": "10101424"
+  },
+  {
+    "name": "Otford",
+    "code": "10101357"
+  },
+  {
+    "name": "Ourimbah",
+    "code": "10101143"
+  },
+  {
+    "name": "Paddy's Markets Light Rail",
+    "code": "10101441"
+  },
+  {
+    "name": "Padstow",
+    "code": "10101416"
+  },
+  {
+    "name": "Panania",
+    "code": "10101418"
+  },
+  {
+    "name": "Parramatta",
+    "code": "10101229"
+  },
+  {
+    "name": "Paterson",
+    "code": "10101181"
+  },
+  {
+    "name": "Pendle Hill",
+    "code": "10101232"
+  },
+  {
+    "name": "Pennant Hills",
+    "code": "10101196"
+  },
+  {
+    "name": "Penrith",
+    "code": "10101252"
+  },
+  {
+    "name": "Penrose",
+    "code": "10101311"
+  },
+  {
+    "name": "Penshurst",
+    "code": "10101340"
+  },
+  {
+    "name": "Petersham",
+    "code": "10101212"
+  },
+  {
+    "name": "Picton",
+    "code": "10101301"
+  },
+  {
+    "name": "Point Clare",
+    "code": "10101138"
+  },
+  {
+    "name": "Port Kembla",
+    "code": "10101377"
+  },
+  {
+    "name": "Port Kembla North",
+    "code": "10101376"
+  },
+  {
+    "name": "Punchbowl",
+    "code": "10101400"
+  },
+  {
+    "name": "Pymble",
+    "code": "10101122"
+  },
+  {
+    "name": "Pyrmont Bay Light Rail",
+    "code": "10101438"
+  },
+  {
+    "name": "Quakers Hill",
+    "code": "10101237"
+  },
+  {
+    "name": "Queens Wharf Light Rail",
+    "code": "10101504"
+  },
+  {
+    "name": "Railway Square",
+    "code": "10101110"
+  },
+  {
+    "name": "Randwick Light Rail",
+    "code": "10101612"
+  },
+  {
+    "name": "Redfern",
+    "code": "10101421"
+  },
+  {
+    "name": "Regents Park",
+    "code": "10101391"
+  },
+  {
+    "name": "Revesby",
+    "code": "10101417"
+  },
+  {
+    "name": "Rhodes",
+    "code": "10101203"
+  },
+  {
+    "name": "Richmond",
+    "code": "10101245"
+  },
+  {
+    "name": "Riverstone",
+    "code": "10101239"
+  },
+  {
+    "name": "Riverwood",
+    "code": "10101415"
+  },
+  {
+    "name": "Rockdale",
+    "code": "10101335"
+  },
+  {
+    "name": "Rooty Hill",
+    "code": "10101247"
+  },
+  {
+    "name": "Rosehill",
+    "code": "10101221"
+  },
+  {
+    "name": "Roseville",
+    "code": "10101118"
+  },
+  {
+    "name": "Royal Randwick Light Rail",
+    "code": "10101609"
+  },
+  {
+    "name": "Royal Randwick Light Rail Stabling",
+    "code": "10101620"
+  },
+  {
+    "name": "Rozelle Bay  Light Rail",
+    "code": "10101431"
+  },
+  {
+    "name": "Rydalmere",
+    "code": "10101223"
+  },
+  {
+    "name": "Sandgate",
+    "code": "10101169"
+  },
+  {
+    "name": "Scarborough",
+    "code": "10101360"
+  },
+  {
+    "name": "Schofields",
+    "code": "10101238"
+  },
+  {
+    "name": "Scone",
+    "code": "10101193"
+  },
+  {
+    "name": "Sefton",
+    "code": "10101404"
+  },
+  {
+    "name": "Seven Hills",
+    "code": "10101234"
+  },
+  {
+    "name": "Shellharbour Junction",
+    "code": "10101446"
+  },
+  {
+    "name": "Singleton",
+    "code": "10101190"
+  },
+  {
+    "name": "Springwood",
+    "code": "10101259"
+  },
+  {
+    "name": "St James",
+    "code": "10101105"
+  },
+  {
+    "name": "St Leonards",
+    "code": "10101115"
+  },
+  {
+    "name": "St Marys",
+    "code": "10101249"
+  },
+  {
+    "name": "St Peters",
+    "code": "10101443"
+  },
+  {
+    "name": "Stanmore",
+    "code": "10101213"
+  },
+  {
+    "name": "Stanwell Park",
+    "code": "10101358"
+  },
+  {
+    "name": "Strathfield",
+    "code": "10101206"
+  },
+  {
+    "name": "Summer Hill",
+    "code": "10101210"
+  },
+  {
+    "name": "Surry Hills Light Rail",
+    "code": "10101607"
+  },
+  {
+    "name": "Sutherland",
+    "code": "10101345"
+  },
+  {
+    "name": "Sydenham",
+    "code": "10101326"
+  },
+  {
+    "name": "Tahmoor",
+    "code": "10101302"
+  },
+  {
+    "name": "Tallong",
+    "code": "10101313"
+  },
+  {
+    "name": "Tarro",
+    "code": "10101171"
+  },
+  {
+    "name": "Tascott",
+    "code": "10101137"
+  },
+  {
+    "name": "Taverners Hill Light Rail",
+    "code": "10101457"
+  },
+  {
+    "name": "Telarah",
+    "code": "10101179"
+  },
+  {
+    "name": "Telopea",
+    "code": "10101225"
+  },
+  {
+    "name": "Tempe",
+    "code": "10101327"
+  },
+  {
+    "name": "Teralba",
+    "code": "10101153"
+  },
+  {
+    "name": "The Star Light Rail",
+    "code": "10101437"
+  },
+  {
+    "name": "Thirroul",
+    "code": "10101364"
+  },
+  {
+    "name": "Thornleigh",
+    "code": "10101195"
+  },
+  {
+    "name": "Thornton",
+    "code": "10101173"
+  },
+  {
+    "name": "Toongabbie",
+    "code": "10101233"
+  },
+  {
+    "name": "Town Hall",
+    "code": "10101101"
+  },
+  {
+    "name": "Towradgi",
+    "code": "10101369"
+  },
+  {
+    "name": "Tuggerah",
+    "code": "10101144"
+  },
+  {
+    "name": "Turramurra",
+    "code": "10101123"
+  },
+  {
+    "name": "Turrella",
+    "code": "10101409"
+  },
+  {
+    "name": "UNSW Anzac Parade Light Rail",
+    "code": "10101615"
+  },
+  {
+    "name": "UNSW High Street Light Rail",
+    "code": "10101611"
+  },
+  {
+    "name": "Unanderra",
+    "code": "10101378"
+  },
+  {
+    "name": "Valley Heights",
+    "code": "10101258"
+  },
+  {
+    "name": "Victoria Street",
+    "code": "10101175"
+  },
+  {
+    "name": "Villawood",
+    "code": "10101407"
+  },
+  {
+    "name": "Vineyard",
+    "code": "10101240"
+  },
+  {
+    "name": "Wahroonga",
+    "code": "10101125"
+  },
+  {
+    "name": "Waitara",
+    "code": "10101126"
+  },
+  {
+    "name": "Wallarobba",
+    "code": "10101184"
+  },
+  {
+    "name": "Wansey Road Light Rail",
+    "code": "10101610"
+  },
+  {
+    "name": "Warabrook",
+    "code": "10101168"
+  },
+  {
+    "name": "Waratah",
+    "code": "10101167"
+  },
+  {
+    "name": "Waratah Mills Light Rail",
+    "code": "10101459"
+  },
+  {
+    "name": "Warnervale",
+    "code": "10101146"
+  },
+  {
+    "name": "Warrawee",
+    "code": "10101124"
+  },
+  {
+    "name": "Warrimoo",
+    "code": "10101257"
+  },
+  {
+    "name": "Warwick Farm",
+    "code": "10101288"
+  },
+  {
+    "name": "Waterfall",
+    "code": "10101355"
+  },
+  {
+    "name": "Waverton",
+    "code": "10101113"
+  },
+  {
+    "name": "Wentworth Falls",
+    "code": "10101266"
+  },
+  {
+    "name": "Wentworth Park Light Rail",
+    "code": "10101434"
+  },
+  {
+    "name": "Wentworthville",
+    "code": "10101231"
+  },
+  {
+    "name": "Werrington",
+    "code": "10101250"
+  },
+  {
+    "name": "West Ryde",
+    "code": "10101201"
+  },
+  {
+    "name": "Westmead",
+    "code": "10101230"
+  },
+  {
+    "name": "Wiley Park",
+    "code": "10101399"
+  },
+  {
+    "name": "Windsor",
+    "code": "10101242"
+  },
+  {
+    "name": "Wingello",
+    "code": "10101312"
+  },
+  {
+    "name": "Wirragulla",
+    "code": "10101185"
+  },
+  {
+    "name": "Wolli Creek",
+    "code": "10101328"
+  },
+  {
+    "name": "Wollongong",
+    "code": "10101372"
+  },
+  {
+    "name": "Wollstonecraft",
+    "code": "10101114"
+  },
+  {
+    "name": "Wombarra",
+    "code": "10101361"
+  },
+  {
+    "name": "Wondabyne",
+    "code": "10101134"
+  },
+  {
+    "name": "Woodford",
+    "code": "10101262"
+  },
+  {
+    "name": "Woolooware",
+    "code": "10101350"
+  },
+  {
+    "name": "Woonona",
+    "code": "10101366"
+  },
+  {
+    "name": "Woy Woy",
+    "code": "10101135"
+  },
+  {
+    "name": "Wyee",
+    "code": "10101147"
+  },
+  {
+    "name": "Wynyard",
+    "code": "10101102"
+  },
+  {
+    "name": "Wyong",
+    "code": "10101145"
+  },
+  {
+    "name": "Yagoona",
+    "code": "10101402"
+  },
+  {
+    "name": "Yennora",
+    "code": "10101284"
+  },
+  {
+    "name": "Yerrinbool",
+    "code": "10101304"
+  },
+  {
+    "name": "Zig Zag",
+    "code": "10101273"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "train",
+  "name": "Sydney Trains",
+  "version": "1.0.0",
+  "description": "Sydney Trains Real-Time Indicator Board & Countdown Tracker (Ported from ESP32 TransportTracker)",
+  "author": "Elliot Mason",
+  "icon": "🚆",
+  "backend": "server.py",
+  "client": "kindle.html",
+  "pollIntervalMs": 30000,
+  "port": 5052
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sydney Trains — Kindle Indicator Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      width: 100%;
+      height: 100%;
+      user-select: none;
+      -webkit-user-select: none;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .flash-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: #000000;
+      z-index: 9999;
+    }
+    .topbar {
+      border-bottom: 3.5px solid #000000;
+      padding: 10px 18px;
+      font-family: monospace, sans-serif;
+      font-weight: bold;
+      font-size: 19px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .topbar-left { float: left; }
+    .topbar-right { float: right; }
+    .top-btn {
+      display: inline-block;
+      border: 2px solid #000000;
+      padding: 3px 10px;
+      margin-left: 8px;
+      cursor: pointer;
+      font-size: 15px;
+      background: #ffffff;
+      color: #000000;
+    }
+    .top-btn:active {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .train-wrap {
+      padding: 16px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .train-route-bar {
+      border: 3.5px solid #000000;
+      background: #000000;
+      color: #ffffff;
+      padding: 10px 16px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .train-route-txt {
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-family: monospace, sans-serif;
+    }
+    .train-swap-btn {
+      float: right;
+      background: #ffffff;
+      color: #000000;
+      border: 2px solid #ffffff;
+      font-family: monospace, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 4px 12px;
+      cursor: pointer;
+    }
+    .train-swap-btn:active, .train-swap-btn.btn-active {
+      background: #000000 !important;
+      color: #ffffff !important;
+    }
+
+    .train-hero-card {
+      border: 3.5px solid #000000;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .train-hero-left {
+      float: left;
+      width: 58%;
+    }
+    .train-hero-right {
+      float: right;
+      width: 42%;
+      text-align: right;
+    }
+    .train-badge-row {
+      margin-bottom: 6px;
+    }
+    .train-line-badge {
+      display: inline-block;
+      background: #000000;
+      color: #ffffff;
+      font-family: monospace, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 2px 10px;
+      margin-right: 6px;
+    }
+    .train-plat-badge {
+      display: inline-block;
+      border: 2px solid #000000;
+      font-family: monospace, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 3px 8px;
+    }
+    .train-line-name {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .train-meta-sub {
+      font-size: 14px;
+      color: #333333;
+      font-family: sans-serif;
+    }
+    .train-countdown-pill {
+      display: inline-block;
+      background: #000000;
+      color: #ffffff;
+      font-family: monospace, sans-serif;
+      font-size: 21px;
+      font-weight: bold;
+      padding: 5px 12px;
+      margin-bottom: 6px;
+    }
+    .train-dep-time {
+      font-size: 32px;
+      font-weight: bold;
+      font-family: monospace, sans-serif;
+      line-height: 1.1;
+    }
+    .train-arr-info {
+      font-size: 14px;
+      color: #444444;
+      margin-top: 4px;
+    }
+
+    .train-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px solid #000000;
+      margin-bottom: 16px;
+    }
+    .train-table th {
+      background: #000000;
+      color: #ffffff;
+      font-family: monospace;
+      font-size: 14px;
+      padding: 8px 10px;
+      text-align: left;
+    }
+    .train-table td {
+      border-top: 2px solid #000000;
+      padding: 9px 10px;
+      font-family: monospace;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .sp-controls {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+    }
+    .ctrl-btn {
+      display: table-cell;
+      width: 50%;
+      background: #ffffff;
+      color: #000000;
+      border: 3.5px solid #000000;
+      font-family: monospace, sans-serif;
+      font-size: 19px;
+      font-weight: bold;
+      text-align: center;
+      padding: 13px 6px;
+      cursor: pointer;
+      vertical-align: middle;
+    }
+    .ctrl-btn:active, .ctrl-btn.btn-active {
+      background: #000000 !important;
+      color: #ffffff !important;
+    }
+    .ctrl-btn + .ctrl-btn {
+      border-left: none;
+    }
+    .sp-ctrl-status {
+      font-family: monospace;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333333;
+      margin-top: 8px;
+      min-height: 20px;
+      text-align: center;
+    }
+
+    .idle-box { padding: 60px 20px; text-align: center; }
+    .idle-box h2 { font-size: 28px; margin-bottom: 12px; font-weight: bold; }
+    .idle-box p { font-family: sans-serif; font-size: 18px; color: #444444; }
+  </style>
+</head>
+<body>
+  <div id="flash-overlay" class="flash-overlay"></div>
+
+  <div class="topbar">
+    <div class="topbar-left">SYDNEY TRAINS &middot; <span id="clock-txt">--:--</span></div>
+    <div class="topbar-right">
+      <span class="top-btn" id="flash-btn">Flash</span>
+    </div>
+  </div>
+
+  <div class="train-wrap">
+    <div class="train-route-bar">
+      <div class="train-route-txt" id="tr-route-header">LOADING ROUTE...</div>
+      <div class="train-swap-btn" id="tr-swap-btn">&#8646; SWAP</div>
+    </div>
+
+    <div id="tr-idle" class="idle-box" style="display:none;">
+      <h2 id="tr-idle-title">No trains currently scheduled</h2>
+      <p id="tr-idle-sub">Check back shortly or tap Swap to reverse route</p>
+    </div>
+
+    <div id="tr-content">
+      <!-- Hero: Next Train Departure -->
+      <div class="train-hero-card">
+        <div class="train-hero-left">
+          <div class="train-badge-row">
+            <span class="train-line-badge" id="tr-line-badge">T1</span>
+            <span class="train-plat-badge" id="tr-plat-badge">PLATFORM 1</span>
+          </div>
+          <div class="train-line-name" id="tr-line-name">Sydney Trains</div>
+          <div class="train-meta-sub" id="tr-meta-sub">8 Cars &middot; Seats Available</div>
+        </div>
+        <div class="train-hero-right">
+          <div><span class="train-countdown-pill" id="tr-countdown">in -- MINS</span></div>
+          <div class="train-dep-time" id="tr-dep-time">--:--</div>
+          <div class="train-arr-info" id="tr-arr-info">Arr --:--</div>
+        </div>
+      </div>
+
+      <!-- Upcoming Departures Table -->
+      <table class="train-table">
+        <thead>
+          <tr>
+            <th style="width:25%;">DEP TIME</th>
+            <th style="width:20%;">COUNTDOWN</th>
+            <th style="width:18%;">LINE</th>
+            <th style="width:17%;">PLAT</th>
+            <th style="width:20%;">ARR TIME</th>
+          </tr>
+        </thead>
+        <tbody id="tr-upcoming-body">
+          <tr><td colspan="5" style="text-align:center;padding:16px;">Loading departures...</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Touch Controls Bar -->
+      <div class="sp-controls">
+        <button type="button" class="ctrl-btn" id="tr-btn-swap">&#8646; SWAP ROUTE</button>
+        <button type="button" class="ctrl-btn" id="tr-btn-poll">&#8635; REFRESH</button>
+      </div>
+      <div class="sp-ctrl-status" id="tr-status"></div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      function updateClock() {
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = (h < 10 ? "0" + h : h) + ":" + (m < 10 ? "0" + m : m);
+        var clockEl = document.getElementById("clock-txt");
+        if (clockEl) clockEl.innerHTML = s;
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      function triggerFlash() {
+        var el = document.getElementById("flash-overlay");
+        el.style.display = "block";
+        setTimeout(function() {
+          el.style.display = "none";
+        }, 120);
+      }
+      document.getElementById("flash-btn").onclick = triggerFlash;
+
+      function bindTouchButton(id, callback) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        var touched = false;
+        el.addEventListener("touchstart", function(e) {
+          touched = true;
+          el.className = el.className + " btn-active";
+          callback(e);
+          setTimeout(function() {
+            el.className = el.className.replace(" btn-active", "");
+          }, 300);
+          if (e.preventDefault) e.preventDefault();
+        }, false);
+        el.addEventListener("click", function(e) {
+          if (touched) {
+            touched = false;
+            return;
+          }
+          callback(e);
+        }, false);
+      }
+
+      function renderTrain(data) {
+        if (!data.success || !data.trainFound) {
+          document.getElementById("tr-content").style.display = "none";
+          document.getElementById("tr-idle").style.display = "block";
+          if (data.errorMessage) {
+            document.getElementById("tr-idle-sub").innerHTML = data.errorMessage;
+          }
+          return;
+        }
+        document.getElementById("tr-idle").style.display = "none";
+        document.getElementById("tr-content").style.display = "block";
+
+        var orig = data.originStation || "Origin";
+        var dest = data.destStation || "Destination";
+        document.getElementById("tr-route-header").innerHTML = orig.toUpperCase() + " &rarr; " + dest.toUpperCase();
+
+        document.getElementById("tr-line-badge").innerHTML = data.routeLabel || "T1";
+        document.getElementById("tr-plat-badge").innerHTML = (data.originPlatform || "Platform 1").toUpperCase();
+        document.getElementById("tr-line-name").innerHTML = data.lineName || "Sydney Trains";
+
+        var meta = (data.cars || "8 Cars") + " &middot; " + (data.occupancy || "Seats Available");
+        if (data.realtime) meta = "&bull; Real-time &middot; " + meta;
+        document.getElementById("tr-meta-sub").innerHTML = meta;
+
+        var mins = data.minutesUntil != null ? data.minutesUntil : 0;
+        var countdownTxt = mins <= 0 ? "NOW DEPARTING" : (mins === 1 ? "in 1 MIN" : "in " + mins + " MINS");
+        document.getElementById("tr-countdown").innerHTML = countdownTxt;
+        document.getElementById("tr-dep-time").innerHTML = data.originTime || "--:--";
+
+        var arrTxt = "Arr " + (data.destTime || "--:--");
+        if (data.durationMins) arrTxt += " (" + data.durationMins + " mins)";
+        document.getElementById("tr-arr-info").innerHTML = arrTxt;
+
+        var tbody = document.getElementById("tr-upcoming-body");
+        tbody.innerHTML = "";
+        var up = data.upcoming || [];
+        if (up.length === 0) {
+          tbody.innerHTML = "<tr><td colspan='5' style='text-align:center;font-style:italic;color:#666;'>No further departures scheduled</td></tr>";
+        } else {
+          for (var i = 0; i < up.length; i++) {
+            var item = up[i];
+            var tr = document.createElement("tr");
+            var cd = item.minutesUntil <= 0 ? "NOW" : item.minutesUntil + "m";
+            tr.innerHTML = "<td>" + (item.departureTime || "--:--") + "</td>" +
+                           "<td><span style='background:#000;color:#fff;padding:2px 8px;'>" + cd + "</span></td>" +
+                           "<td><b>" + (item.routeLabel || "T1") + "</b></td>" +
+                           "<td>" + (item.platform || "Plat 1") + "</td>" +
+                           "<td>" + (item.arrivalTime || "--:--") + "</td>";
+            tbody.appendChild(tr);
+          }
+        }
+      }
+
+      function pollTrain() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/api/trains?t=" + new Date().getTime(), true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            try {
+              var data = JSON.parse(xhr.responseText);
+              renderTrain(data);
+            } catch (e) {}
+          }
+        };
+        xhr.send();
+      }
+
+      function swapTrainStations() {
+        var statusEl = document.getElementById("tr-status");
+        if (statusEl) statusEl.innerHTML = "Swapping origin & destination...";
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/api/trains/config?t=" + new Date().getTime(), true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            try {
+              var cfg = JSON.parse(xhr.responseText);
+              var newOrig = cfg.destination_code;
+              var newDest = cfg.origin_code;
+              var postXhr = new XMLHttpRequest();
+              postXhr.open("POST", "/api/trains/config", true);
+              postXhr.setRequestHeader("Content-Type", "application/json");
+              postXhr.onreadystatechange = function() {
+                if (postXhr.readyState === 4) {
+                  if (statusEl) statusEl.innerHTML = "";
+                  triggerFlash();
+                  pollTrain();
+                }
+              };
+              postXhr.send(JSON.stringify({ origin_code: newOrig, destination_code: newDest }));
+            } catch (e) {
+              if (statusEl) statusEl.innerHTML = "Error swapping route";
+            }
+          }
+        };
+        xhr.send();
+      }
+
+      bindTouchButton("tr-swap-btn", swapTrainStations);
+      bindTouchButton("tr-btn-swap", swapTrainStations);
+      bindTouchButton("tr-btn-poll", function() { triggerFlash(); pollTrain(); });
+
+      pollTrain();
+      setInterval(pollTrain, 30000);
+    })();
+  </script>
+</body>
+</html>
